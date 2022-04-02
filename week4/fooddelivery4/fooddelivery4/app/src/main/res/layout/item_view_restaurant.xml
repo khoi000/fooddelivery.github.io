@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/avata_res"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/id_restaurant"
+        android:layout_width="261dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/avata_res"
+        app:layout_constraintTop_toTopOf="@+id/avata_res" />
+
+    <TextView
+        android:id="@+id/name_res"
+        android:layout_width="260dp"
+        android:layout_height="33dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/address_of_res"
+        app:layout_constraintEnd_toEndOf="@+id/id_restaurant"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_restaurant"
+        app:layout_constraintTop_toBottomOf="@+id/id_restaurant" />
+
+    <TextView
+        android:id="@+id/address_of_res"
+        android:layout_width="261dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name_res"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/avata_res" />
+</androidx.constraintlayout.widget.ConstraintLayout>
