@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        tools:context=".ProfileActivity">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="You're Logged-In as "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            style="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <Button
+            android:id="@+id/editinforbtn"
+            android:layout_width="192dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/goctron"
+            android:text="Edit Information" />
+
+        <TextView
+            android:id="@+id/mainInFoTv"
+            android:layout_width="332dp"
+            android:layout_height="102dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="Info" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/goctron"
+            android:text="NEXT" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/goctron"
+            android:text="Logout" />
+
+    </LinearLayout>
+</layout>
